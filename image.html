@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="changeImage()">Click it</button>
+<img id="astrid" src="http://ilarge.lisimg.com/image/8718362/740full-astrid-berges--frisbey.jpg" width="300px">
+
+<script>
+	a=0;
+		function changeImage(){
+			a++;	
+			if (a%2!=0) {
+				document.getElementById("astrid").setAttribute("src","https://s-media-cache-ak0.pinimg.com/originals/cf/dc/28/cfdc289e380d8e23b607d6f28fac8a69.jpg");
+				document.getElementById("astrid").style("width","300px");
+			}else{
+				document.getElementById("astrid").setAttribute("src","https://s-media-cache-ak0.pinimg.com/originals/25/34/15/2534159fac60d85e0755e9358da3a40b.jpg");
+				document.getElementById("astrid").style("width","300px");
+			}
+		}	
+
+</script>
+</body>
+</html>
